@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How we're testing RINGLESS</title>
+<meta name="description" content="The hypothesis, the prototype and the tests behind RINGLESS, with the results we'll publish.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%232aa8a0' stroke-width='8' stroke-dasharray='110 30' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="pagehead">
+  <div class="wrap">
+    <div class="bar" style="position:static">
+      <a class="logo" href="index.html" aria-label="RINGLESS home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#45cfc4"/><stop offset="1" stop-color="#1f8f9a"/></linearGradient></defs><circle cx="32" cy="32" r="22" fill="none" stroke="url(#lg)" stroke-width="7" stroke-dasharray="112 28" stroke-linecap="round" transform="rotate(-60 32 32)"/></svg>
+        RINGLESS
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#join" class="pill">Get early access</a>
+      </nav>
+    </div>
+    <h1>How we're<br><em>testing this.</em></h1>
+    <p class="lede">RINGLESS is a bet that a better coaster is worth paying for. Here is exactly what we're betting, how we'll check it, and what would make us stop.</p>
+    <span class="status">Testing has not started &middot; results will be posted here</span>
+  </div>
+</header>
+
+<main class="plan">
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="sec">The hypothesis</h2>
+    <div class="quote">People with nicer furniture who use coasters at home will pay about $28 for a set of 4 weighted, absorbent, minimalist stone coasters. They'll pay because their current coasters drip and feel cheap.</div>
+    <p class="fineprint">If any part of that is false, the business fails. The parts are the target customer, the pain, the price, and whether the product works.</p>
+    <div class="parts"><span>Target customer</span><span>The pain</span><span>The price</span><span>It works</span></div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="sec">The minimum version</h2>
+    <p class="lead">Just enough to test the hypothesis, and nothing more.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="n">PART 1</span>
+        <h3>One hand-built prototype set</h3>
+        <p>Diatomite stone top, a stainless steel plate and a cork base, at about 7 to 8 oz each.</p>
+      </div>
+      <div class="card">
+        <span class="n">PART 2</span>
+        <h3>One landing page</h3>
+        <p>The product pitch, the $28 target price and an email signup button. You're looking at it.</p>
+      </div>
+    </div>
+    <p class="fineprint">Skipped on purpose: extra colors, packaging and logo polish. None of them test the hypothesis.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="sec">Four tests</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="n">TEST 1 &middot; ABOUT 1 WEEK</span>
+        <h3>Does the product work?</h3>
+        <ul>
+          <li>Cold drink on a wood surface for 30 minutes.</li>
+          <li>Soak the prototype for a week to check for rust.</li>
+        </ul>
+        <p class="pass">Pass: no ring, no drip-through, no rust bleed.</p>
+      </div>
+      <div class="card">
+        <span class="n">TEST 2 &middot; 20+ PEOPLE</span>
+        <h3>Interviews</h3>
+        <ul>
+          <li>Only people with nicer furniture.</li>
+          <li>They hold the prototype next to a cheap coaster.</li>
+          <li>We ask if they'd pay $28, then ask for their email.</li>
+        </ul>
+        <p class="pass">The email counts. The verbal yes doesn't.</p>
+      </div>
+      <div class="card">
+        <span class="n">TEST 3</span>
+        <h3>Landing page signups</h3>
+        <ul>
+          <li>Shared with interviewees and a wider group, such as classmates' families.</li>
+          <li>Friends and family are tagged and counted separately.</li>
+        </ul>
+        <p class="pass">Measure: share of visitors who sign up.</p>
+      </div>
+      <div class="card">
+        <span class="n">TEST 4</span>
+        <h3>Price split</h3>
+        <ul>
+          <li>Half of visitors see a lower price, half a higher one.</li>
+          <li>We keep the price with the higher signup rate.</li>
+        </ul>
+        <p class="pass">One change at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="sec">What would make us stop</h2>
+    <p class="lead">These thresholds are our own picks, not industry standards. We're writing them down before testing so we can't move them afterward.</p>
+    <table class="signals">
+      <tr><th>Result</th><th>Signal</th></tr>
+      <tr><td>Prototype passes the wet and rust tests</td><td class="go">Continue</td></tr>
+      <tr><td>30% or more of interviewees give their email</td><td class="go">Continue</td></tr>
+      <tr><td>Under 10% give their email</td><td class="stop">Kill or pivot</td></tr>
+      <tr><td>Rust or ring failure in the product test</td><td class="stop">Drop the plate, try a thicker stone</td></tr>
+    </table>
+    <p class="fineprint">We'll publish the numbers here once we have them, including the ones we don't like.</p>
+  </div>
+</section>
+
+</main>
+
+<section class="split" style="min-height:0">
+  <div class="panel" style="grid-column:1/-1;align-items:flex-start">
+    <h2>Want to see how it turns out?</h2>
+    <div class="rule"></div>
+    <p class="s">One email when it's ready. No spam. Nothing is charged.</p>
+    <a class="btn" href="index.html#join" style="text-decoration:none;align-self:flex-start">Join the waitlist &rsaquo;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="legal" style="padding-top:28px">Pre-launch: nothing is for sale or charged. <a href="index.html">Back to RINGLESS</a>. &copy; <span id="yr"></span> RINGLESS.</p>
+  </div>
+  <div class="stripe"></div>
+</footer>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>

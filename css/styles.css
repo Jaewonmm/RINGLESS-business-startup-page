@@ -157,3 +157,32 @@ footer .logo svg{width:46px;height:46px}
   .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s}
   .reveal.in{opacity:1;transform:none}
 }
+
+/* ---------- PLAN PAGE (plan.html) ---------- */
+.pagehead{position:relative;inset:auto;background:linear-gradient(135deg,var(--navy-2),var(--navy));color:#fff;padding:0 0 72px}
+.pagehead .bar{height:96px}
+.pagehead h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;text-transform:uppercase;line-height:1.08;margin-top:28px}
+.pagehead h1 em{font-style:normal;color:var(--teal-2)}
+.pagehead .lede{max-width:40rem;margin-top:20px;color:#c0cce0;font-size:1.05rem}
+.status{display:inline-block;margin-top:26px;border:1.5px solid rgba(69,207,196,.6);color:var(--teal-2);padding:7px 16px;border-radius:999px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.plan .block:first-of-type{border-top:0}
+.quote{background:var(--navy);color:#fff;padding:40px 44px;font-size:1.25rem;line-height:1.5;font-weight:500;border-left:6px solid var(--teal)}
+.parts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.parts span{border:1.5px solid var(--navy);color:var(--navy);padding:7px 16px;border-radius:999px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:30px}
+.card{background:#fff;border:1px solid var(--line);padding:32px}
+.card .n{font-size:.78rem;letter-spacing:.2em;color:var(--teal);font-weight:700}
+.card h3{font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin:.5rem 0 .7rem}
+.card p,.card li{color:var(--muted);font-size:.95rem}
+.card ul{margin:.6rem 0 0 1.1rem}
+.card .pass{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);color:var(--navy);font-weight:600;font-size:.9rem}
+.signals{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);margin-top:28px}
+.signals th,.signals td{text-align:left;padding:16px 22px;border-bottom:1px solid var(--line);font-size:.95rem}
+.signals th{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);background:#fbf7f1}
+.signals td:last-child{font-weight:700;color:var(--navy)}
+.signals tr:last-child td{border-bottom:0}
+.go{color:var(--teal)!important}.stop{color:#b4452f!important}
+.fineprint{margin-top:16px;font-size:.85rem;color:var(--muted);max-width:44rem}
+.planlink{display:inline-block;margin-top:18px;color:var(--navy);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--teal);padding-bottom:3px}
+.planlink:hover{color:var(--teal)}
+@media (max-width:960px){.cards{grid-template-columns:1fr}.quote{padding:28px}}
